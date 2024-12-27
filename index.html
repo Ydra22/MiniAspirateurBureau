@@ -3,31 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique Aspirateur Bureau</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mini Aspirateur de Bureau</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <h1>Boutique Mini Aspirateur de Bureau</h1>
-            <a href="panier.html">Mon Panier</a>
-        </div>
+        <div class="logo">Mini Gadget</div>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Produits</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
-
-    <section class="product">
-        <div class="product-details">
-            <img src="mini-aspirateur.jpg" alt="Mini Aspirateur de Bureau">
-            <h2>Mini Aspirateur de Bureau</h2>
-            <p class="description">Ce mini aspirateur est l'accessoire idéal pour garder votre bureau propre et sans poussière. Compact, efficace et facile à utiliser.</p>
-            <p class="price">29,99 €</p>
-            <button class="add-to-cart" onclick="addToCart()">Ajouter au panier</button>
+    <main>
+        <div class="product-section">
+            <div class="image-gallery">
+                <img src="mini-aspirateur.jpg" alt="Mini aspirateur de bureau">
+            </div>
+            <div class="details">
+                <h1>Mini Aspirateur de Bureau</h1>
+                <p class="price"><span class="old-price">37,78€</span> 17,29€</p>
+                <p>Compact et pratique, idéal pour nettoyer les miettes sur votre clavier ou bureau.</p>
+                <div class="quantity">
+                    <label for="quantity">Quantité : </label>
+                    <input type="number" id="quantity" value="1" min="1">
+                </div>
+                <div class="buttons">
+                    <button>Ajouter au panier</button>
+                    <a href="#">Payer avec PayPal</a>
+                    <button>Économisez en achetant plus</button>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Boutique Mini Aspirateur</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+        <div class="video-section">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/example" title="Mini aspirateur vidéo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="features">
+                <h2>Caractéristiques du produit</h2>
+                <ul>
+                    <li>Matériel : ABS</li>
+                    <li>Conception originale et facile à transporter</li>
+                    <li>Taper :
+                        <ul>
+                            <li>Aspirateur Manuel</li>
+                            <li>Électrique</li>
+                            <li>Sans fil</li>
+                        </ul>
+                    </li>
+                    <li>Bouton : Marche/Arrêt</li>
+                    <li>Taille réduite et compacte</li>
+                    <li>Léger et maniable</li>
+                    <li>Utilisation pratique et simple</li>
+                    <li>Occupe peu d'espace</li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
